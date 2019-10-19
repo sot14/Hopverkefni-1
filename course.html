@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prílihúsið</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Prílihúsið</h1>
+    </header>
+    <main>
+    <h2>Námskeið</h2>
+    <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri
+        en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
+    <!---Mynd af Prílihúsinu hér-->
+    <div class="uppl">
+        <h2>Almennar upplýsingar</h2>
+        <label for="nafn">Nafn: </label>
+        <input type="text" id="nafn" name="nafn" required><br>
+        <label for="heimilisfang">Heimilisfang: </label>
+        <input type="text" id="heimilisfang" name="heimilisfang" required><br>
+        <label for="aldur">Aldur: </label>
+        <input type="text" id="aldur" name="aldur" required><br>
+        <label for="namskeid">Námskeið: </label>
+        <input list="namskeid" id="namskeidid" placeholder="V0 - V1">
+        <!---ekki viss hvort það eigi að vera placeholder eða hvort það sé hægt að autoselecta-->
+        <datalist id="namskeid">
+            <option value="V0 - V1"></option>
+            <option value="V2 - V4"></option>
+            <option value="V5 - V7"></option>
+            <option value="Krakkanámskeið"></option>
+            <option value="Fjallaklifur"></option>
+        </datalist>
+    </div>
+    <div class="greidsla">
+        <h2>Greiðsluupplýsingar</h2>
+        <label for="kortanumer">Kortanúmer: </label>
+        <input type="text" id="kortanumer" name="kortanumer" required><br>
+        <label for="korthafi">Korthafi: </label>
+        <input type="text" id="korthafi" name="korthafi" required><br>
+        <p>Gildistími: </p>
+        <!---ætti ég að setja label hér frekar? Kemur ekki í sömu línu núna-->
+        <label for="man">Mán:</label>
+        <input list="man" id="manid" placeholder="01" required>
+        <datalist id="man">
+            <!---Bæði listarnir þurfa að taka minna pláss á síðunni-->
+            <option value="01"></option>
+            <option value="02"></option>
+            <option value="03"></option>
+            <option value="04"></option>
+            <option value="05"></option>
+            <option value="06"></option>
+            <option value="07"></option>
+            <option value="08"></option>
+            <option value="09"></option>
+            <option value="10"></option>
+            <option value="11"></option>
+            <option value="12"></option>
+        </datalist>
+        <label for="ar">Ár:</label>
+        <input list="ar" id="arid" placeholder="01" required>
+        <datalist id="ar">
+            <option value="2019"></option>
+            <option value="2020"></option>
+            <option value="2021"></option>
+            <option value="2022"></option>
+        </datalist><br>
+        <button class="skra" type="button">Skrá</button>
+    </div>
+</main>
+</body>
+
+</html>
