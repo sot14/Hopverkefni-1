@@ -1,0 +1,22 @@
+h1,
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+header {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ff5000; }
+  header .header_first {
+    display: flex;
+    align-items: flex-start; }
+  header .header_val {
+    font-size: 0.5em;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+
+/*# sourceMappingURL=cart.css.map */

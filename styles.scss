@@ -16,16 +16,29 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
   font-size: 16px;
+  line-height: 1.5em;
   header {
     background-color: #ff5000;
+    font-size: 16px;
+    line-height: 1.5em;
   }
 
   footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: #00b7ff;
+
+    .footer_text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    //max-width: 1200px;
   }
-  //max-width: 1200px;
+
+  // TODO fleiri grunn stillingar
+
+  // TODO sækja allar sass skrár
+  @import "scss/products";
+  @import "scss/cart";
 }
-
-// TODO fleiri grunn stillingar
-
-// TODO sækja allar sass skrár
-@import "scss/products";
