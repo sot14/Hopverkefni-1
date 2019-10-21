@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Prílihúsið</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 
 <header>
-    <h1>Prílihúsið</h1>
+    <div class="header_first">
+        <h1>Prílihúsið</h1>
+    </div>
+    <div class="header_val">
+        <a href="pages/index.html">FORSÍÐA</a>
+        <a href="pages/products.html">VÖRUR</a>
+        <a href="pages/course.html">NÁMSKEIÐ</a>
+        <a href="pages/staff.html">STARFSFÓLK</a>
+    </div>
+    <!---þarf mögulega að láta css gera caps letters en ekki gera sjálf-->
+    <p>Karfa (6)</p>
 </header>
 
-<body>  <!---merkingafræðilega vitlaust að hafa body hér held ég-->
+<body>
+    <!---merkingafræðilega vitlaust að hafa body hér held ég-->
     <main>
         <h2>Vörur í körfu</h2>
         <div class="bakpoki">
@@ -24,6 +35,9 @@
             <input type="text" id="bak" name="bak" value="2">
             <button class="uppfaera" type="button">Uppfæra</button>
             <button class="eyda" type="button">Eyða úr körfu</button>
+            <div class="backp_image">
+                <img class="backp__img" src="img/backpack.jpg" alt="">
+            </div>
         </div>
 
         <div class="kalkpoki">
@@ -34,6 +48,9 @@
             <input type="text" id="kalk" name="kalk" value="4">
             <button class="uppfaera" type="button">Uppfæra</button>
             <button class="eyda" type="button">Eyða úr körfu</button>
+            <div class="kalk_image">
+                <img class="kalk__img" src="img/chalkbag.jpg" alt="">
+            </div>
         </div>
         <div class="sending">
             <h2>Sendingarupplýsingar</h2>
@@ -238,7 +255,8 @@
             <!---ætti ég að setja label hér frekar? Kemur ekki í sömu línu núna-->
             <label for="man">Mán:</label>
             <input list="man" id="manid" placeholder="01" required>
-            <datalist id="man">  <!---Bæði listarnir þurfa að taka minna pláss á síðunni-->
+            <datalist id="man">
+                <!---Bæði listarnir þurfa að taka minna pláss á síðunni-->
                 <option value="01"></option>
                 <option value="02"></option>
                 <option value="03"></option>
@@ -260,9 +278,59 @@
                 <option value="2021"></option>
                 <option value="2022"></option>
             </datalist>
+
         </div>
 
         <button class="kaupa" type="button">Kaupa</button>
     </main>
+
+    <footer>
+
+        <div class="footer_text">
+            <div>
+                <h2>Vöruflokkar</h2>
+                <ul>
+                    <li><a href="pages/products.html">Nauðsynjavörur</a></li>
+                    <li><a href="pages/products.html">Frábærar vörur</a></li>
+                    <li><a href="pages/products.html">Ómissandi vörur</a></li>
+                    <li><a href="pages/products.html">Ótrúlegar vörur</a></li>
+                    <li><a href="pages/products.html">Magnaðar vörur</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Vöruflokkar</h2>
+                <ul>
+                    <li><a href="pages/products.html">Trylltar vörur</a></li>
+                    <li><a href="pages/products.html">Geggjaðar vörur</a></li>
+                    <li><a href="pages/products.html">Svakalegar vörur</a></li>
+                    <li><a href="pages/products.html">Fáránlegar vörur</a></li>
+                    <li><a href="pages/products.html">Klikkaðar vörur</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Námskeið</h2>
+                <ul>
+                    <li><a href="pages/course.html">V0 - V1 námskeið</a></li>
+                    <li><a href="pages/course.html">V2 - V4 námskeið</a></li>
+                    <li><a href="pages/course.html">V5 - V7 námskeið</a></li>
+                    <li><a href="pages/course.html">Fjallaklifur námskeið</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Síður</h2>
+                <ul>
+                    <li><a href="pages/products.html">Allar vörur</a></li>
+                    <li><a href="pages/staff.html">Starfsfólk</a></li>
+                    <li><a href="pages/course.html">Námskeið</a></li>
+                    <li><a href="pages/cart.html">Karfa</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>
