@@ -1,0 +1,15 @@
+body {
+  .vörur {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .vara {
+    .img {
+      display: grid;
+      height: auto;
+    }
+  }
+}
