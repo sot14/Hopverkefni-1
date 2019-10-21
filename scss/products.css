@@ -4,9 +4,11 @@ body .vörur {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  color: aqua; }
+  color: aqua;
+}
 body .vara .img {
   display: grid;
-  height: auto; }
+  height: auto;
+}
 
 /*# sourceMappingURL=products.css.map */

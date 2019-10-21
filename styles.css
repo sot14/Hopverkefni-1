@@ -13,11 +13,29 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
   font-size: 16px;
-  line-height: 1.5em; }
-  html header {
+  line-height: 1.5em;
+  /*
+  header {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #ff5000;
-    font-size: 16px;
-    line-height: 1.5em; }
+
+    .header_first {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .header_val {
+      font-size: 0.75em;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+*/ }
   html footer {
     width: 100vw;
     height: 30vh;
