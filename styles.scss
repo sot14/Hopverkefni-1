@@ -1,42 +1,80 @@
+@import "scss/config";
+//Letur fyrir meginmál er Open Sans eða helvetica, arial eða sans-serif letur. Letur fyrir fyrirsagnir er Oswald, Verdana eða serif letur.
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
-  font-family: "Open Sans", helvetica, arial, sans-serif;
-  body {
-    .vörur {
-      max-width: 1200px;
-      display: grid;
-      grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 1fr 1fr;
-      margin: 1em;
+  /* stylelint-disable-line */
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.5em;
 
-      .vara {
-        align-content: center;
-        h2 {
-          font-size: 36px;
-          line-height: 2em;
-          font-family: "Oswald", sans-serif;
-        }
-        h3 {
-          padding: 1em 1em 1em 0;
-        }
+  header {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ff5000;
 
-        .img_container {
-          grid-column-start: 1 4 9;
-          img {
-            max-width: 100%;
-          }
-        }
-        button {
-          border: 1px solid black;
-          border-radius: 3px;
-          padding: 3px;
-          background-color: #fffcf2;
-        }
-        input {
-          border: 1px solid black;
-          border-radius: 3px;
-          height: 2em;
+    .header_first {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .header_val {
+      font-size: 0.75em;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      display: flex;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
         }
       }
     }
   }
+
+  footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: #00b7ff;
+
+    .footer_text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      ul {
+        list-style: none;
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: #fffcf2;
+        }
+      }
+    }
+    //max-width: 1200px;
+  }
 }
+// TODO fleiri grunn stillingar
+
+// TODO sækja allar sass skrár
+@import "scss/products";
+@import "scss/cart";
+@import "scss/staff";
