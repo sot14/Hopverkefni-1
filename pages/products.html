@@ -2,112 +2,144 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Prílihúsið</title>
+  <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<header>
+  <div class="header_first">
+    <h1>Prílihúsið</h1>
+  </div>
+  <div class="header_val">
+    <ul>
+      <li><a href="../index.html">FORSÍÐA</a></li>
+      <li><a href="products.html">VÖRUR</a></li>
+      <li><a href="course.html">NÁMSKEIÐ</a></li>
+      <li><a href="staff.html">STARFSFÓLK</a></li>
+      <li><a href="cart.html">Karfa (6)</a></li>
+    </ul>
+  </div>
+</header>
 
-    <link rel="stylesheet" href="../grid.css" />
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <header>
-      <h1>Prílihúsið</h1>
-    </div>
-    <div class="header_val">
-      <ul>
-        <li><a href="../index.html">FORSÍÐA</a></li>
-        <li><a href="products.html">VÖRUR</a></li>
-        <li><a href="course.html">NÁMSKEIÐ</a></li>
-        <li><a href="staff.html">STARFSFÓLK</a></li>
-        <li><a href="cart.html">Karfa (6)</a></li>
-      </ul>
-    </div>
-  </header>
-  <body>
-    <section class="staff_container">
-          <div class="staff">
-              <img src="../img/Karítas.jpg" />
-            <div class="overlay">
-          
-                <h1>Karítas Hrafnsdóttir</h1>
-                <p>
-                  Karítas Kennir öll námskeið hjá prílihúsinu. Hún hefur unnið 3
-                  heimsmeistaratitla.
-                </p>
-              </div>
+<body>
+    <secton class="vörur">
+        <div class="vara">
+           <div class="img_container">
+            <img src="../img/backpack.jpg" alt="mynd af brilliant bakpoka">
           </div>
-      </div>
-          <div class="staff">
-          <img src="../img/Úlfur Arnar.jpg" />
-        <div class="overlay">
-            <h1>Úlfur Arnar Guðjohnsen</h1>
-            <p>
-              Úlfur hefur klifrað síðan hann var 3 ára. Hann stofnaði síðan
-              prílihúsið þegar hann var 24 ára.
-            </p>
-          </div>
+            <h2>Bakpoki</h2>
+            <p>Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
+            <h3>49.900 kr.-</h3>
+            <label for="fjöldi"> Fjöldi:</label>
+            </br>
+            <input name="fjöldi" type="number" id="fjöldi" value="1" min="0" />
+            <button type="button">Setja í körfu</button>
         </div>
-      <div class="staff">
-          <img src="../img/Bergrós.jpg" />
-        <div class="overlay">
-        <h1>Bergrós Pétursdóttir</h1>
-        <p>
-          Bergrós er forritari hjá Prílihúsinu. Ef eitthvað er að, lagar Bergrós
-          það.
-        </p>
-      </div>
-      </div>
-      <div class="staff">
-          <img src="../img/Hannes.jpg" />
-        <div class="overlay">
-        <h1>Hannes Flóki Andrason</h1>
-        <p>
-          Hannes sér um peningana. Gefðu Hannesi peninga með því að kaupa
-          eitthvað klikkað hjá Prílihúsinu.
-        </p>
-      </div>
-      </div>
-    </section>
-    <footer>
+        <div class="vara">
+            <div class="img_container">
+            <img src="../img/chalkbag.jpg" alt="mynd af flottum kalkpoka">
+          </div>
+            <h2>Kalkpoki</h2>
+            <p>Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
+            <h3>4.900 kr.-</h3>
+            <label for="fjöldi"> Fjöldi:</label>
+            </br>
+            <input name="fjöldi" type="number" id="fjöldi" value="1" min="0" />
+            <button type="button">Setja í körfu</button>
+        </div>
+        <div class="vara">
+            <div class="img_container">
+            <img src="../img/climbingrope.jpg" alt="mynd af slitsterku reipi">
+          </div>
+            <h2>Klifurlína</h2>
+            <p> Farðu upp öll fjöll með þessari 200m klifurlínu.</p></br>
+            <h3>39.900 kr.-</h3>
+            <label for="fjöldi"> Fjöldi:</label>
+            </br>
+            <input name="fjöldi" type="number" id="fjöldi" value="1" min="0" />
+            <button type="button">Setja í körfu</button>
+        </div>
+        <div class="vara">
+            <div class="img_container">
+            <img src="../img/shoes.jpg" alt="mynd af góðum skóm fyrir allar aðstæður">
+          </div>
+            <h2> Klifurskór </h2>
+            <p>Klifurskór með nanótækni sem gerir þér kleift að klifra upp slétta lóðrétta veggi </p>
+            <h3>19.900 kr.- </h3>
+            <label for="fjöldi"> Fjöldi:</label>
+            </br>
+            <input name="fjöldi" type="number" id="fjöldi" value="1" min="0" />
+            <button type="button">Setja í körfu</button>
+        </div>
+        <div class="vara">
+            <div class="img_container">
+            <img src="../img/dring.jpg" alt="mynd af klikkuðum karabínum">
+          </div>
+            <h2>Karabína 10 stk. </h2>
+            <p>Þessi karabína hefur styrkleika til þess að halda á 10 tonnum. Það er meira en 20 snorlax pókemonar.</p>
+            <h3>10.900 kr.- </h3>
+            <label for="fjöldi"> Fjöldi:</label>
+            </br>
+            <input name="fjöldi" type="number" id="fjöldi" value="1" min="0" />
+            <button type="button">Setja í körfu</button>
+        </div>
+        <div class="vara">
+            <div class="img_container">
+            <img src="../img/Harness.jpg" alt="mynd af krúttlegu klifurbelti">
+          </div>
+            <h2> Klifurbelti </h2>
+            <p>Hágæða klifurbelti með nanótækni og innbyggt bluetooth til þess að tengjast símanum þínum.</p>
+            <h3>1.999.900 kr.- </h3>
+            <label for="fjöldi"> Fjöldi:</label>
+            </br>
+            <input name="fjöldi" type="number" id="fjöldi" value="1" min="0" />
+            <button type="button">Setja í körfu</button>
+          </div>
+        </secton>
+        <footer>
       <div class="footer_text">
         <div>
           <h2>Vöruflokkar</h2>
           <ul>
-            <li><a href="pages/products.html">Nauðsynjavörur</a></li>
-            <li><a href="pages/products.html">Frábærar vörur</a></li>
-            <li><a href="pages/products.html">Ómissandi vörur</a></li>
-            <li><a href="pages/products.html">Ótrúlegar vörur</a></li>
-            <li><a href="pages/products.html">Magnaðar vörur</a></li>
+            <li><a href="products.html">Nauðsynjavörur</a></li>
+            <li><a href="products.html">Nauðsynjavörur</a></li>
+            <li><a href="products.html">Nauðsynjavörur</a></li>
+            <li><a href="products.html">Nauðsynjavörur</a></li>
+            <li><a href="products.html">Nauðsynjavörur</a></li>
           </ul>
         </div>
 
         <div>
           <h2>Vöruflokkar</h2>
           <ul>
-            <li><a href="pages/products.html">Trylltar vörur</a></li>
-            <li><a href="pages/products.html">Geggjaðar vörur</a></li>
-            <li><a href="pages/products.html">Svakalegar vörur</a></li>
-            <li><a href="pages/products.html">Fáránlegar vörur</a></li>
-            <li><a href="pages/products.html">Klikkaðar vörur</a></li>
+              <li><a href="products.html">Nauðsynjavörur</a></li>
+              <li><a href="products.html">Nauðsynjavörur</a></li>
+              <li><a href="products.html">Nauðsynjavörur</a></li>
+              <li><a href="products.html">Nauðsynjavörur</a></li>
+              <li><a href="products.html">Nauðsynjavörur</a></li>
           </ul>
         </div>
 
         <div>
           <h2>Námskeið</h2>
           <ul>
-            <li><a href="pages/course.html">V0 - V1 námskeið</a></li>
-            <li><a href="pages/course.html">V2 - V4 námskeið</a></li>
-            <li><a href="pages/course.html">V5 - V7 námskeið</a></li>
-            <li><a href="pages/course.html">Fjallaklifur námskeið</a></li>
+            <li><a href="course.html">V0 - V1 námskeið</a></li>
+            <li><a href="course.html">V0 - V1 námskeið</a></li>
+            <li><a href="course.html">V0 - V1 námskeið</a></li>
+            <li><a href="course.html">Fjallaklifur námskeið</a></li>
           </ul>
         </div>
 
         <div>
           <h2>Síður</h2>
           <ul>
-            <li><a href="pages/products.html">Allar vörur</a></li>
-            <li><a href="pages/staff.html">Starfsfólk</a></li>
-            <li><a href="pages/course.html">Námskeið</a></li>
-            <li><a href="pages/cart.html">Karfa</a></li>
+            <li><a href="products.html">Allar vörur</a></li>
+            <li><a href="staff.html">Starfsfólk</a></li>
+            <li><a href="course.html">Námskeið</a></li>
+            <li><a href="cart.html">Karfa</a></li>
           </ul>
         </div>
       </div>
