@@ -1,15 +1,44 @@
-body {
-  .vörur {
-    max-width: 1200px;
+html {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .vara {
-    .img {
+    .vörur {
       display: grid;
-      height: auto;
+      max-width: 1200px;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 1fr 1fr;
+      margin: 1em;
+
+      .vara {
+        align-content: center;
+        grid-column-start: 1 3 5;
+        h2 {
+          font-size: 36px;
+          line-height: 2em;
+          font-family: "Oswald", sans-serif;
+        }
+        h3 {
+          padding: 1em 1em 1em 0;
+        }
+
+        .img_container {
+          grid-column-start: 1 4 9;
+          img {
+            max-width: 100%;
+          }
+        }
+        button {
+          border: 1px solid black;
+          border-radius: 3px;
+          padding: 3px;
+          background-color: #fffcf2;
+        }
+        input {
+          border: 1px solid black;
+          border-radius: 3px;
+          height: 2em;
+        }
+      }
     }
   }
 }

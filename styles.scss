@@ -17,7 +17,7 @@ html {
   overflow-x: hidden;
   font-size: 16px;
   line-height: 1.5em;
-  /*
+
   header {
     width: 100vw;
     height: 12vh;
@@ -37,8 +37,19 @@ html {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      display: flex;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+        }
+      }
     }
-*/
+  }
+
   footer {
     width: 100vw;
     height: 30vh;
@@ -48,13 +59,22 @@ html {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      ul {
+        list-style: none;
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: #fffcf2;
+        }
+      }
     }
     //max-width: 1200px;
   }
-
-  // TODO fleiri grunn stillingar
-
-  // TODO sækja allar sass skrár
-  @import "scss/products";
-  @import "scss/cart";
 }
+// TODO fleiri grunn stillingar
+
+// TODO sækja allar sass skrár
+@import "scss/products";
+@import "scss/cart";
+@import "scss/staff";

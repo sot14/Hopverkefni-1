@@ -1,0 +1,70 @@
+body {
+  .staff_container {
+    display: inline-block;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    margin: 1em;
+
+    /* Container needed to position the overlay. Adjust the width as needed */
+    .staff {
+      position: relative;
+      width: 100%;
+      background-size: cover;
+    }
+
+    /* Make the image to responsive */
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      background-size: cover;
+      object-fit: cover;
+    }
+
+    /* The overlay effect (full height and width) - lays on top of the container and over the image */
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.3s ease;
+      background-color: white;
+      color: black;
+      font-size: 1em;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+      .h1 {
+        top: 50%;
+        left: 50%;
+      }
+    }
+
+    /* When you mouse over the container, fade in the overlay icon*/
+    .staff:hover .overlay {
+      opacity: 1;
+    }
+
+    /* The icon inside the overlay is positioned in the middle vertically and horizontally 
+    .overlay {
+      color: white;
+      font-size: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }*/
+
+    /* When you move the mouse over the icon, change color */
+    .fa-user:hover {
+      color: #eee;
+    }
+  }
+}

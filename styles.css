@@ -13,48 +13,7 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
   font-size: 16px;
-  line-height: 1.5em;
-  /*
-  header {
-    width: 100vw;
-    height: 12vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ff5000;
-
-    .header_first {
-      display: flex;
-      align-items: flex-start;
-    }
-
-    .header_val {
-      font-size: 0.75em;
-      color: black;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-*/ }
-  html footer {
-    width: 100vw;
-    height: 30vh;
-    background-color: #00b7ff; }
-    html footer .footer_text {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly; }
-  html body .vörur {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
-  html body .vara .img {
-    display: grid;
-    height: auto; }
-  html h1,
-  html h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  line-height: 1.5em; }
   html header {
     width: 100vw;
     height: 12vh;
@@ -66,10 +25,142 @@ html {
       display: flex;
       align-items: flex-start; }
     html header .header_val {
-      font-size: 0.5em;
+      font-size: 0.75em;
       color: black;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end; }
+      align-items: flex-end;
+      display: flex; }
+      html header .header_val ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; }
+        html header .header_val ul a {
+          text-decoration: none; }
+  html footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: #00b7ff; }
+    html footer .footer_text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      html footer .footer_text ul {
+        list-style: none;
+        justify-content: space-between; }
+        html footer .footer_text ul a {
+          text-decoration: none;
+          color: #fffcf2; }
+
+html {
+  font-family: "Open Sans", helvetica, arial, sans-serif; }
+  html body {
+    display: grid; }
+    html body .vörur {
+      display: grid;
+      max-width: 1200px;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 1fr 1fr;
+      margin: 1em; }
+      html body .vörur .vara {
+        align-content: center;
+        grid-column-start: 1 3 5; }
+        html body .vörur .vara h2 {
+          font-size: 36px;
+          line-height: 2em;
+          font-family: "Oswald", sans-serif; }
+        html body .vörur .vara h3 {
+          padding: 1em 1em 1em 0; }
+        html body .vörur .vara .img_container {
+          grid-column-start: 1 4 9; }
+          html body .vörur .vara .img_container img {
+            max-width: 100%; }
+        html body .vörur .vara button {
+          border: 1px solid black;
+          border-radius: 3px;
+          padding: 3px;
+          background-color: #fffcf2; }
+        html body .vörur .vara input {
+          border: 1px solid black;
+          border-radius: 3px;
+          height: 2em; }
+
+h1,
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+header {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ff5000; }
+  header .header_first {
+    display: flex;
+    align-items: flex-start; }
+  header .header_val {
+    font-size: 0.5em;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+
+body .staff_container {
+  display: inline-block;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  margin: 1em;
+  /* Container needed to position the overlay. Adjust the width as needed */
+  /* Make the image to responsive */
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  /* When you mouse over the container, fade in the overlay icon*/
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally 
+  .overlay {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }*/
+  /* When you move the mouse over the icon, change color */ }
+  body .staff_container .staff {
+    position: relative;
+    width: 100%;
+    background-size: cover; }
+  body .staff_container img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-size: cover;
+    object-fit: cover; }
+  body .staff_container .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+    body .staff_container .overlay .h1 {
+      top: 50%;
+      left: 50%; }
+  body .staff_container .staff:hover .overlay {
+    opacity: 1; }
+  body .staff_container .fa-user:hover {
+    color: #eee; }
 
 /*# sourceMappingURL=styles.css.map */
