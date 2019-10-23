@@ -1,15 +1,41 @@
-body {
-  .vörur {
-    max-width: 1200px;
+html {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  .products {
     display: grid;
+    max-width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-  }
+    column-gap: 20px;
+    margin: auto;
+    margin-bottom: 3em;
 
-  .vara {
-    .img {
-      display: grid;
-      height: auto;
+    .product_description {
+      padding: 2em 0 1em 0;
+
+      h2 {
+        font-size: 36px;
+        line-height: 2em;
+        font-family: "Oswald", sans-serif;
+      }
+      h3 {
+        padding: 1em 1em 1em 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+      button {
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 3px;
+        background-color: #fffcf2;
+        height: 2em;
+      }
+      input {
+        border: 1px solid black;
+        border-radius: 3px;
+        height: 2em;
+      }
     }
   }
 }
