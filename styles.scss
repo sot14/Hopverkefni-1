@@ -20,7 +20,7 @@ html {
 
   header {
     width: 100vw;
-    height: 12vh;
+    height: 18vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,7 +28,18 @@ html {
 
     .header_first {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
+      text-align: center;
+      position: relative;
+
+      h1 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     .header_val {
@@ -38,6 +49,7 @@ html {
       justify-content: space-between;
       align-items: flex-end;
       display: flex;
+
       ul {
         list-style: none;
         display: flex;
@@ -49,10 +61,17 @@ html {
       }
     }
   }
+  body {
+    h1,
+    h2,
+    h3 {
+      font-family: Verdana, sans-serif;
+    }
+  }
 
   footer {
     width: 100vw;
-    height: 30vh;
+    height: 45vh;
     background-color: #00b7ff;
 
     .footer_text {
@@ -78,3 +97,4 @@ html {
 @import "scss/products";
 @import "scss/cart";
 @import "scss/staff";
+@import "scss/index";
