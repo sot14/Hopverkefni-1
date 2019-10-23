@@ -1,26 +1,109 @@
-h1,
-h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.bakpoki {
+  display: flex;
+  flex-direction: row;
+
+  .bak_image {
+      .bak_img {
+          max-width: 80%;
+          margin: auto 10% auto auto auto;
+      }
+  }
+  .bak_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .bak_last {
+          .uppfaera, .eyda {
+              background-color: lightgrey;
+              border: 1px solid black;
+              border-radius: 3px;
+              padding: 0.25em;
+          }
+      }
+      }
 }
 
-header {
-  width: 100vw;
-  height: 12vh;
+.kalkpoki {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+
+  .kalk_image {
+      .kalk_img {
+          max-width: 80%;
+          margin: auto 10% auto auto auto;
+      }
+  }
+  .kalk_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .kalk_last {
+          .uppfaera, .eyda {
+              background-color: lightgrey;
+              border: 1px solid black;
+              border-radius: 3px;
+              padding: 0.25em;
+          }
+      }
+  }
+}
+
+.upplysingar { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 75%;
+  align-content: center;
+  margin: 5% 0;
+
+  .sending, .greidsla {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      .col1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+      }
+      .col2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; 
+      }
+
+      input {
+          max-width: 80%;
+          border: 1px solid black;
+          border-radius: 2px;
+          padding: 0.25em;
+      }
+  }
+
+  .sending h2 {
+      max-height: 10%;
+  }
+
+  .greidsla {
+
+      .col2ma {
+          input:nth-of-type(1){
+              max-width: 15%;
+          }
+          input:nth-of-type(2) {
+              max-width: 20%;
+          }
+      }
+  }
+}
+
+.kaupa {  //takki neðst í miðju síðunnar
+  display:flex;
+  background-color: #00b7ff;
+  padding: 0.75em 6em;
+  margin: 1em auto;
+  border: 1px solid #00b7ff;
+  border-radius: 3px;
+  align-items: center;
   justify-content: center;
-  background-color: #ff5000;
-
-  .header_first {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .header_val {
-    font-size: 0.5em;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+  text-align: center;
 }
