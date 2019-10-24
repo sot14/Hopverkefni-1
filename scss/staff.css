@@ -1,0 +1,65 @@
+.staff_container {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  margin: 2em auto;
+  /* Container needed to position the overlay. Adjust the width as needed */
+  /* Make the image to responsive */
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  /* When you mouse over the container, fade in the overlay icon*/
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally 
+    /* The icon inside the overlay is positioned in the middle vertically and horizontally 
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally 
+    /* The icon inside the overlay is positioned in the middle vertically and horizontally 
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally 
+    .overlay {
+      color: white;
+      font-size: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }*/
+  /* When you move the mouse over the icon, change color */ }
+  .staff_container .staff {
+    position: relative;
+    background-size: cover;
+    object-fit: contain;
+    padding: 0.5em 0.25em; }
+  .staff_container img {
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: contain, cover; }
+  .staff_container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: white; }
+  .staff_container .staff:hover .overlay {
+    opacity: 1; }
+  .staff_container .overlay_text {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+    .staff_container .overlay_text h2 {
+      padding: 0.5em; }
+  .staff_container .fa-user:hover {
+    color: #eee; }
+
+/*# sourceMappingURL=staff.css.map */

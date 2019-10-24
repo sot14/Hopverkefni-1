@@ -1,55 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="is">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vöruhúsið</title>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Prílihúsið</title>
 
-    <link rel="stylesheet" href="grid.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header_first">
-        <h1>Prílihúsið</h1>
-      </div>
-      <div class="header_val">
-        <ul>
-          <li><a href="index.html">FORSÍÐA</a></li>
-          <li><a href="pages/products.html">VÖRUR</a></li>
-          <li><a href="pages/course.html">NÁMSKEIÐ</a></li>
-          <li><a href="pages/staff.html">STARFSFÓLK</a></li>
-          <li><a href="pages/cart.html">Karfa (6)</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <main>
-      <div>
-        <h2>Allar vörurnar</h2>
-        <p>Prílihúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
-        <div>
-          <a href="pages/products.html">Skoða vörur</a>
+      <link rel="stylesheet" href="grid.css">
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      
+      <header class="header">
+        <div class="header__title">
+          <h1>Prílihúsið</h1>
         </div>
-      </div>
-      <div>
-        <img src="img/climbing-store.jpg" alt="Mynd af verslun" />
-      </div>
-
-      <div>
-        <h2>Besta starfsfólkið</h2>
-        <p>Starfsfólkið okkar hugsar vel um þig.</p>
-        <div>
-          <a href="pages/staff.html">Kynnast starfsfólki</a>
+        <div class="header__val">
+          <ul>
+            <li><a href="index.html">FORSÍÐA</a></li>
+            <li><a href="pages/products.html">VÖRUR</a></li>
+            <li><a href="pages/course.html">NÁMSKEIÐ</a></li>
+            <li><a href="pages/staff.html">STARFSFÓLK</a></li>
+          </ul>
+          <div class="header__cart">
+            <a class="header__button" href="pages/cart.html">Karfa (6)</a>
+          </div>
         </div>
-      </div>
-      <div>
-        <img src="img/team.jpg" alt="Mynd af höndum teymisins" />
-      </div>
+      </header>
+
+      <main>
+          <section class="section section--reversed">
+              <div class="content">
+                <h2 class="title">Allar vörurnar</h2>
+                <p class="text">Prílihúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
+  
+              <div class="content__button">
+                  <a class="button" href="pages/products.html">Skoða vörur</a>
+                </div>
+              </div>
+              <div class="content content--image">
+                <div class="image">
+                  <img class="img" src="img/climbing-store.jpg" alt="Mynd af verslun">
+                </div>
+              </div>
+            </div>
+          </section>
+      
+        <section class="section">
+          <div class="content">
+            <h2 class="title">Besta starfsfólkið</h2>
+            <p class="text">Starfsfólkið okkar hugsar vel um þig.</p>
+            
+            <div class="content__button">
+              <a class="button" href="pages/staff.html">Kynnast starfsfólki</a> 
+            </div>
+          </div>
+          <div class="content">
+            <div class="image">
+              <img class="img" src="img/team.jpg" alt="Mynd af höndum teymisins">
+            </div>
+          </div>
+        </section>
     </main>
-    <footer>
-      <div class="footer_text">
-        <div>
+    
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__title">
           <h2>Vöruflokkar</h2>
           <ul>
             <li><a href="pages/products.html">Nauðsynjavörur</a></li>
@@ -60,7 +75,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer__title">
           <h2>Vöruflokkar</h2>
           <ul>
             <li><a href="pages/products.html">Trylltar vörur</a></li>
@@ -71,7 +86,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer__title">
           <h2>Námskeið</h2>
           <ul>
             <li><a href="pages/course.html">V0 - V1 námskeið</a></li>
@@ -81,7 +96,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer__title">
           <h2>Síður</h2>
           <ul>
             <li><a href="pages/products.html">Allar vörur</a></li>
@@ -94,4 +109,3 @@
     </footer>
   </body>
 </html>
-
