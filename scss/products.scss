@@ -28,6 +28,12 @@
       border-radius: 3px;
       background-color: lightgray;
     }
+
+    button:hover {
+      background-color: $blue;
+      border: $blue;
+      transition: 0.2s ease;
+    }
     input {
       border: 1px solid black;
       border-radius: 3px;
