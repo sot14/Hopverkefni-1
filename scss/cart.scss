@@ -1,114 +1,185 @@
-.bakpoki {
-  display: flex;
-  flex-direction: row;
-
-  .bak_image {
-      .bak_img {
-          max-width: 80%;
-          margin: auto 10% auto auto auto;
-      }
+.content {
+   max-width: 1200px;
+   padding: 5% 0 0 0;
+   
+  .fyrirsogn {
+    align-self: flex-start;
+    padding: 0 0 0 6%;
   }
-  .bak_text {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      .bak_last {
-          .uppfaera, .eyda {
-              background-color: lightgrey;
-              border: 1px solid black;
-              border-radius: 3px;
-              padding: 0.25em;
-          }
-      }
-      }
-}
+  .bakpoki {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0 5% 0;
 
-.kalkpoki {
-  display: flex;
-  flex-direction: row;
-
-  .kalk_image {
-      .kalk_img {
-          max-width: 80%;
-          margin: auto 10% auto auto auto;
+    .bak_image {
+      max-width: 100%;
+        .bak__img {
+            max-width: 80%;
+            margin: auto 10% auto 10%;
+        }
       }
+    
+    .bak_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .bak_last {
+            .uppfaera, .eyda {
+                background-color: lightgrey;
+                border: 1px solid black;
+                border-radius: 3px;
+                padding: 0.25em;
+            }
+        }
+
+        .bak_last p, .bak_first p {
+          padding: 5% 0 0 0;
+        }
+        }
   }
-  .kalk_text {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      .kalk_last {
-          .uppfaera, .eyda {
-              background-color: lightgrey;
-              border: 1px solid black;
-              border-radius: 3px;
-              padding: 0.25em;
-          }
-      }
+
+  .kalkpoki {
+    display: flex;
+    flex-direction: row;
+
+    .kalk_image {
+      max-width: 100%;
+        .kalk__img{
+            max-width: 80%;
+            margin: auto 10% auto 10%;
+        }
+    }
+    .kalk_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .kalk_last {
+            .uppfaera, .eyda {
+                background-color: lightgrey;
+                border: 1px solid black;
+                border-radius: 3px;
+                padding: 0.25em;
+            }
+        }
+        .kalk_last p, .kalk_first p {
+          padding: 5% 0 0 0;
+        }
+    }
   }
-}
 
-.upplysingar { 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 75%;
-  align-content: center;
-  margin: 5% 0;
+  .bakpoki input, .kalkpoki input {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0.4em;
+    max-width: 20%;
+  }
 
-  .sending, .greidsla {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
+  .upplysingar { 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-content: center;
+    margin: 5% 0;
+    padding: 0 0 0 6%;
+    column-gap: 4%;
 
-      .col1 {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-      }
+    .sending, .greidsla {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 30% 70%;
+
+        .col1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .col2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+
+        input {
+            max-width: 80%;
+            border: 1px solid black;
+            border-radius: 2px;
+            padding: 0.4em;
+        }
+    }
+
+    .greidsla {
+
+        .col2ma {
+            input:nth-of-type(1){
+                max-width: 15%;
+            }
+            input:nth-of-type(2) {
+                max-width: 20%;
+            }
+        }
+    }
+  }
+
+  .kaupa {  //takki neðst í miðju síðunnar
+    background-color: #00b7ff;
+    padding: 0.75em 6em;
+    margin: 1em 37% 1em 45%;
+    border: 1px solid #00b7ff;
+    border-radius: 3px;
+    
+  }
+
+ }
+
+ @media (max-width: 800px) {
+  .content {
+    .upplysingar {
+      grid-template-columns: 50% 50%;
+      padding: 0 0 0 3%;
+      column-gap: 8%;
+      .sending, .greidsla {
+      grid-template-columns: 30% 70%;
       .col2 {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around; 
+        max-width:100%;
       }
-
-      input {
-          max-width: 80%;
-          border: 1px solid black;
-          border-radius: 2px;
-          padding: 0.25em;
-      }
+    }
+    }
+    .kaupa {
+      margin: 1em 30% 1em 30%;
+    }
+    
+    
   }
-
-  .sending h2 {
-      max-height: 10%;
-  }
+  
 }
 
-.kalkpoki {
-  display: flex;
-  flex-direction: row;
-
-  .greidsla {
-
-      .col2ma {
-          input:nth-of-type(1){
-              max-width: 15%;
+ @media (max-width: 500px) {
+   .content {
+     padding: 2% 0 0 2%;
+      .bakpoki, .kalkpoki {
+        flex-direction: column;
+        padding: 0 0 0 2%;
+        max-width: 100%;
+        
+        .bak_img, .kalk_img {
+          max-width: 50%;
+        }
+      }
+      .upplysingar {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10%;
+        margin: 12% 0 12% 0;
+        .sending, .greidsla {
+          grid-template-columns: 30% 70%;
+          .col2 {
+            max-width: 100%;
           }
-          input:nth-of-type(2) {
-              max-width: 20%;
-          }
+        }
+        
       }
-  }
-}
-
-.kaupa {  //takki neðst í miðju síðunnar
-  display:flex;
-  background-color: #00b7ff;
-  padding: 0.75em 6em;
-  margin: 1em auto;
-  border: 1px solid #00b7ff;
-  border-radius: 3px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+      .kaupa {
+        margin: 1em 30% 1em 30%;
+      }
+    }
+ }
