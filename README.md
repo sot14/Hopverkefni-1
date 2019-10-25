@@ -2,7 +2,7 @@
 
 **Keyrsla verkefnis:**
 
-Til þess að opna þetta verkefni þarf að fylgja eftirfarandi leiðbeiningum:
+Til þess að opna verkefnið þarf að fylgja eftirfarandi leiðbeiningum:
 
 1. Fyrst þarf að hala niður git og node, en tenglar til að hala því niður eru látnar fylgja fyrir neðan. Passa þarf upp á að fylgja réttum leiðbeiningum fyrir stýrikerfið í þeirri tölvu sem notast er við.
 
@@ -11,10 +11,10 @@ Til þess að opna þetta verkefni þarf að fylgja eftirfarandi leiðbeiningum:
 3. Síðan er farið í command line glugga og stimpla inn eftirfarandi skipanir
 
     - cd /
-    - cd ...slóð á þann stað í tölvunni sem verkefnið á að vera í...
+    - cd -*slóð á þann stað í tölvunni sem verkefnið á að vera í*-
     - npm install (setur upp node pakkastjórann í tölvunni)
-    - git clone *klónaður tengill á repositoryið*
-    - npm run dev (dev er skipun sem er búin að linka saman sass og browser sink í pacagejson skránni)
+    - git clone -*klónaður tengill á repositoryið*-
+    - npm run dev (dev er skipun sem er búin að linka saman sass og browser-sync í pacagejson skránni)
 
 Núna ætti síðan að vera búin að opnast á vefnum.
 
