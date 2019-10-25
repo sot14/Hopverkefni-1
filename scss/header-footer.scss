@@ -2,7 +2,7 @@ header {
   display: flex;
   width: 100vw;
   height: 20vh;
-  background-color: #ff5000;
+  background-color: $orange;
   text-align: center;
   position: relative;
 
@@ -67,7 +67,7 @@ header {
 footer {
   width: 100vw;
   height: 40vh;
-  background-color: #00b7ff;
+  background-color: $blue;
 
   .footer__text {
     display: grid;
@@ -89,7 +89,7 @@ footer {
 
       a {
         text-decoration: none;
-        color: #fffcf2;
+        color: $white;
       }
       a:hover {
         color: $black;

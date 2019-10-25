@@ -74,6 +74,12 @@
     border-radius: 3px;
 }
 
+.skra:hover {
+    background-color: $orange;
+    border: $orange;
+    transition: 0.2s ease;
+}
+
 @media (max-width: 1500px) {
     .meginmal {
         padding: 0 0 0 5%;
