@@ -25,6 +25,11 @@ header {
     position: relative;
     justify-content: center;
 
+    .header__cart {
+      align-self: flex-end;
+    
+    }
+
     ul {
       list-style: none;
       display: flex;
@@ -87,9 +92,13 @@ footer {
     
   }
   @media (max-width: 600px) {
+    .footer {
+      height: 80vh;
+    }
     .footer__text {
-      display: flex;
-      border: 1px black solid;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
     }
   }
 }
