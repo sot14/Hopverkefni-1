@@ -2,7 +2,7 @@
 
 **Keyrsla verkefnis:**
 
-Til þess að opna þetta verkefni þarf að fylgja eftirfarandi leiðbeiningum:
+Til þess að opna verkefnið þarf að fylgja eftirfarandi leiðbeiningum:
 
 1. Fyrst þarf að hala niður git og node, en tenglar til að hala því niður eru látnar fylgja fyrir neðan. Passa þarf upp á að fylgja réttum leiðbeiningum fyrir stýrikerfið í þeirri tölvu sem notast er við.
 
