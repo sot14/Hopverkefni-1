@@ -1,4 +1,4 @@
-@import "scss/config";
+//@import "scss/config";
 //Letur fyrir meginmál er Open Sans eða helvetica, arial eða sans-serif letur. Letur fyrir fyrirsagnir er Oswald, Verdana eða serif letur.
 * {
   padding: 0;
@@ -17,83 +17,19 @@ html {
   overflow-x: hidden;
   font-size: 16px;
   line-height: 1.5em;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
 
-  header {
-    width: 100vw;
-    height: 18vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ff5000;
-
-    .header_first {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      position: relative;
-
-      h1 {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    .header_val {
-      font-size: 0.75em;
-      color: black;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      display: flex;
-
-      ul {
-        list-style: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        a {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  body {
-    h1,
-    h2,
-    h3 {
-      font-family: Verdana, sans-serif;
-    }
-  }
-
-  footer {
-    width: 100vw;
-    height: 45vh;
-    background-color: #00b7ff;
-
-    .footer_text {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      ul {
-        list-style: none;
-        justify-content: space-between;
-
-        a {
-          text-decoration: none;
-          color: #fffcf2;
-        }
-      }
-    }
+  h2,
+  h3 {
+    font-family: Verdana, Tahoma, sans-serif;
   }
 }
+
 // TODO fleiri grunn stillingar
 
 // TODO sækja allar sass skrár
-@import "scss/products";
-@import "scss/cart";
-@import "scss/staff";
-@import "scss/index";
+@import "products";
+@import "cart";
+@import "staff";
+@import "index";
+@import "header-footer";

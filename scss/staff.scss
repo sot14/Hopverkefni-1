@@ -33,7 +33,7 @@
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     background-color: white;
   }
 
@@ -55,25 +55,12 @@
       padding: 0.5em;
     }
   }
+}
 
-  /* The icon inside the overlay is positioned in the middle vertically and horizontally 
-    /* The icon inside the overlay is positioned in the middle vertically and horizontally 
-  /* The icon inside the overlay is positioned in the middle vertically and horizontally 
-    /* The icon inside the overlay is positioned in the middle vertically and horizontally 
-  /* The icon inside the overlay is positioned in the middle vertically and horizontally 
-    .overlay {
-      color: white;
-      font-size: 100px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-    }*/
-
-  /* When you move the mouse over the icon, change color */
-  .fa-user:hover {
-    color: #eee;
+@media (max-width: 600px) {
+  .staff_container {
+    display: flex;
+    flex-direction: row wrap;
+    flex-flow: wrap;
   }
 }
