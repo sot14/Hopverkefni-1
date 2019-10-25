@@ -68,6 +68,10 @@ footer {
   height: 40vh;
   background-color: $blue;
 
+  @media (max-width:500px) {
+    height: 80vh;
+  }
+
   .footer__text {
     display: grid;
     max-width: 1200px;
@@ -105,9 +109,7 @@ footer {
   }
 
   @media (max-width: 500px) {
-    .footer {
-      height: 80vh;
-    }
+    
     .footer__text {
       display: grid;
       grid-template-columns: 1fr 1fr;
