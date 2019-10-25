@@ -1,25 +1,20 @@
 
 @media (max-width: 500px) {
-  .section {
-    flex-direction: column;    
-  }
-  .content {
-    flex-direction: row;
-
-  }
-}
-
-@media (min-width: 800px) {
-  .section {
-    flex-direction: column;
-
-  }
   .content {
     flex-direction: row;
   }
 }
 
+@media (max-width: 800px) {
+  .section {
+    flex-flow: wrap;
+  
 
+  }
+  .content {
+    flex-direction: row;
+    }
+}
 
 .section {
   display: flex;
@@ -61,7 +56,6 @@
 
 .imgage {
   max-width: 100%;
-
 
 }
 .button {
