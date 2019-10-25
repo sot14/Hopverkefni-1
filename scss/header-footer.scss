@@ -25,6 +25,15 @@ header {
     position: relative;
     justify-content: center;
 
+    .header__midja {
+      margin: 0 20% 0 27%;
+      @media(max-width:895px) {
+        margin: 0 4% 0 12%;
+      }
+      @media(max-width:560px) {
+        margin: 0;
+      }
+    }
     .header__cart {
       align-self: flex-end;
     
@@ -91,7 +100,14 @@ footer {
   @media (max-width: 1200px) {
     
   }
-  @media (max-width: 600px) {
+
+  @media (max-width: 800px) {
+    
+    
+    
+  }
+
+  @media (max-width: 500px) {
     .footer {
       height: 80vh;
     }
