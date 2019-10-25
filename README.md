@@ -1,4 +1,7 @@
 # Hópverkefni 1
+
+**Keyrsla verkefnis:**
+
 Til þess að opna þetta verkefni þarf að fylgja eftirfarandi leiðbeiningum:
 
 1. Fyrst þarf að hala niður git og node, en tenglar til að hala því niður eru látnar fylgja fyrir neðan. Passa þarf upp á að fylgja réttum leiðbeiningum fyrir stýrikerfið í þeirri tölvu sem notast er við.
@@ -21,6 +24,16 @@ Núna ætti síðan að vera búin að opnast á vefnum.
 - node download: https://nodejs.org/en/download/current/
 - github repo: https://github.com/sot14/Hopverkefni-1
 
+**Uppsetning verkefnis:**
+
+Verkefnið hefur þrjár möppur:
+- img með öllum myndum verkefnisins
+- pages með öllum síðum verkefnisins fyrir utan forsíðu
+- scss með öllum scss skrám verkefnisins sem eru importaðar inn í styles.scss
+
+Fyrir utan möppurnar eru mikilvægu skrárnar, þ.e. index.html og styles.scss sem er aðalskráin og importar allar scss skrárnar sem eru í verkefninu.
+
+Við stílingu verkefnisins notuðum við class skilgreiningar og skilreindum litina inn í config skránni. Header og footer var stílaður í sérskrá sem er importuð á allar skrárnar og annað sameiginlegt útlit eins og letur er skilgreint beint inn í styles.scss.
 
 
 **Upplýsingar um þá sem unnu verkefnið:**
