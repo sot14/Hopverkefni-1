@@ -14,7 +14,7 @@ Til þess að opna verkefnið þarf að fylgja eftirfarandi leiðbeiningum:
     - cd -*slóð á þann stað í tölvunni sem verkefnið á að vera í*-
     - npm install (setur upp node pakkastjórann í tölvunni)
     - git clone -*klónaður tengill á repositoryið*-
-    - npm run dev (dev er skipun sem er búin að linka saman sass og browser sink í pacagejson skránni)
+    - npm run dev (dev er skipun sem er búin að linka saman sass og browser-sync í pacagejson skránni)
 
 Núna ætti síðan að vera búin að opnast á vefnum.
 
