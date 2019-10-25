@@ -1,32 +1,26 @@
-h1,
-h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .bakpoki {
   display: flex;
   flex-direction: row;
 
   .bak_image {
-    .bak_img {
-      max-width: 80%;
-      margin: auto 10% auto auto auto;
-    }
+      .bak_img {
+          max-width: 80%;
+          margin: auto 10% auto auto auto;
+      }
   }
   .bak_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .bak_last {
-      .uppfaera,
-      .eyda {
-        background-color: lightgrey;
-        border: 1px solid black;
-        border-radius: 3px;
-        padding: 0.25em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .bak_last {
+          .uppfaera, .eyda {
+              background-color: lightgrey;
+              border: 1px solid black;
+              border-radius: 3px;
+              padding: 0.25em;
+          }
       }
-    }
-  }
+      }
 }
 
 .kalkpoki {
@@ -34,78 +28,81 @@ h2 {
   flex-direction: row;
 
   .kalk_image {
-    .kalk_img {
-      max-width: 80%;
-      margin: auto 10% auto auto auto;
-    }
+      .kalk_img {
+          max-width: 80%;
+          margin: auto 10% auto auto auto;
+      }
   }
   .kalk_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .kalk_last {
-      .uppfaera,
-      .eyda {
-        background-color: lightgrey;
-        border: 1px solid black;
-        border-radius: 3px;
-        padding: 0.25em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .kalk_last {
+          .uppfaera, .eyda {
+              background-color: lightgrey;
+              border: 1px solid black;
+              border-radius: 3px;
+              padding: 0.25em;
+          }
       }
-    }
   }
 }
 
-.upplysingar {
+.upplysingar { 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20% 75%;
   align-content: center;
   margin: 5% 0;
 
-  .sending,
-  .greidsla {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+  .sending, .greidsla {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
 
-    .col1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-    .col2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
+      .col1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+      }
+      .col2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; 
+      }
 
-    input {
-      max-width: 80%;
-      border: 1px solid black;
-      border-radius: 2px;
-      padding: 0.25em;
-    }
+      input {
+          max-width: 80%;
+          border: 1px solid black;
+          border-radius: 2px;
+          padding: 0.25em;
+      }
   }
 
   .sending h2 {
-    max-height: 10%;
-  }
-
-  .greidsla {
-    .col2ma {
-      input:nth-of-type(1) {
-        max-width: 15%;
-      }
-      input:nth-of-type(2) {
-        max-width: 20%;
-      }
-    }
+      max-height: 10%;
   }
 }
 
-.kaupa {
-  //takki neðst í miðju síðunnar
+.kalkpoki {
   display: flex;
+  flex-direction: row;
+
+  .greidsla {
+
+      .col2ma {
+          input:nth-of-type(1){
+              max-width: 15%;
+          }
+          input:nth-of-type(2) {
+              max-width: 20%;
+          }
+      }
+  }
+}
+
+.kaupa {  //takki neðst í miðju síðunnar
+  display:flex;
   background-color: #00b7ff;
   padding: 0.75em 6em;
   margin: 1em auto;
