@@ -1,21 +1,31 @@
+
 @media (max-width: 500px) {
+  .section {
+    flex-direction: column;    
+  }
   .content {
-    flex-direction: row wrap;
-    flex-flow: wrap;
+    flex-direction: row;
+
   }
 }
 
 @media (min-width: 800px) {
+  .section {
+    flex-direction: column;
+
+  }
   .content {
     flex-direction: row;
   }
 }
 
+
+
 .section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  align-items: center;  
   padding: 2em;
   justify-content: space-around;
 }
@@ -33,22 +43,26 @@
   padding-right: 2em;
 }
 
+
 .title {
   font-family: sans-serif;
   font-size: 2em;
-  line-height: 1em;
+  line-height: 1em; 
   padding-bottom: 2em;
 }
 
 .text {
-  font-size: 1.5em;
+  font-size: 1.5em; 
   line-height: 1;
   flex: 1;
   padding-bottom: 2em;
 }
 
-.img {
+
+.imgage {
   max-width: 100%;
+
+
 }
 .button {
   background-color: #00b7ff;
