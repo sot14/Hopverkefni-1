@@ -30,6 +30,12 @@
                 border-radius: 3px;
                 padding: 0.25em;
             }
+
+            .uppfaera:hover, .eyda:hover {
+              background-color: $blue;
+              transition: 0.2s ease;
+              border: $blue;
+            }
         }
 
         .bak_last p, .bak_first p {
@@ -59,6 +65,12 @@
                 border: 1px solid black;
                 border-radius: 3px;
                 padding: 0.25em;
+            }
+
+            .uppfaera:hover, .eyda:hover {
+              background-color: $blue;
+              border: $blue;
+              transition: 0.2s ease;
             }
         }
         .kalk_last p, .kalk_first p {
@@ -121,14 +133,19 @@
   }
 
   .kaupa {  //takki neðst í miðju síðunnar
-    background-color: #00b7ff;
+    background-color: $blue;
     padding: 0.75em 6em;
     margin: 1em 37% 1em 45%;
-    border: 1px solid #00b7ff;
+    border: 1px solid $blue;
     border-radius: 3px;
     
   }
 
+  .kaupa:hover {
+    background-color: $orange;
+    border: $orange;
+    transition: 0.2s ease;
+  }
  }
 
  @media (max-width: 800px) {

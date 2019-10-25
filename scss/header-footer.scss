@@ -2,7 +2,7 @@ header {
   display: flex;
   width: 100vw;
   height: 20vh;
-  background-color: #ff5000;
+  background-color: $orange;
   text-align: center;
   position: relative;
 
@@ -25,6 +25,15 @@ header {
     position: relative;
     justify-content: center;
 
+    .header__midja {
+      margin: 0 20% 0 27%;
+      @media(max-width:895px) {
+        margin: 0 4% 0 12%;
+      }
+      @media(max-width:560px) {
+        margin: 0;
+      }
+    }
     .header__cart {
       align-self: flex-end;
     
@@ -58,7 +67,7 @@ header {
 footer {
   width: 100vw;
   height: 40vh;
-  background-color: #00b7ff;
+  background-color: $blue;
 
   .footer__text {
     display: grid;
@@ -80,7 +89,7 @@ footer {
 
       a {
         text-decoration: none;
-        color: #fffcf2;
+        color: $white;
       }
       a:hover {
         color: $black;
@@ -91,7 +100,14 @@ footer {
   @media (max-width: 1200px) {
     
   }
-  @media (max-width: 600px) {
+
+  @media (max-width: 800px) {
+    
+    
+    
+  }
+
+  @media (max-width: 500px) {
     .footer {
       height: 80vh;
     }
