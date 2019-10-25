@@ -1,0 +1,113 @@
+
+
+.meginmal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 40%;
+    max-width: 1200px;
+    column-gap: 12px;
+    margin: auto;
+    align-content: center;
+
+    .grid1 {
+        padding: 0 5% 0 0;
+    }
+
+    .grid1 p {
+        margin: 5% 0 0 0;
+    }
+
+    .grid2 {
+        align-content: center;
+        margin: auto;
+        padding: 0 0 30% 0;
+    }
+
+    .grid2 img {
+        max-width: 98%;
+        margin: auto;
+    }
+
+    .uppl, .greidsla {
+        display: grid;
+        grid-template-columns: 30% 50%;
+        grid-template-rows: 20% 60% ;
+        padding: 5% 0;
+
+        .texti , .linur {
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
+        }
+
+        .linur input{
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 0.4em;
+            max-width: 100%;
+        }
+
+        .linur {
+            .linur_ma {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                input:nth-of-type(1){
+                    max-width: 15%;
+                }
+                input:nth-of-type(2) {
+                    max-width: 25%;
+                }
+            }
+
+        }
+    }
+
+}
+
+.skra { //blár takki neðst á síðunni
+    display:flex;
+    background-color: #00b7ff;
+    padding: 0.75em 6em;
+    margin: 1em auto;
+    border: 1px solid #00b7ff;
+    border-radius: 3px;
+}
+
+@media (max-width: 1500px) {
+    .meginmal {
+        padding: 0 0 0 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .meginmal {
+        padding: 0 0 0 5%;
+        .greidsla {
+        .linur {
+             max-width: 100%;
+            }
+        }
+        .grid2 img{
+            max-width: 50%;
+        }
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .meginmal {
+        padding: 0 0 0 5%;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        .grid1 {
+            
+        }
+
+        .greidsla {
+            .linur {
+                max-width: 100%;
+            }
+        }
+    }
+}
