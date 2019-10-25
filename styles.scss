@@ -1,4 +1,4 @@
-//@import "scss/config";
+@import "scss/config";
 //Letur fyrir meginmál er Open Sans eða helvetica, arial eða sans-serif letur. Letur fyrir fyrirsagnir er Oswald, Verdana eða serif letur.
 * {
   padding: 0;
@@ -28,8 +28,8 @@ html {
 // TODO fleiri grunn stillingar
 
 // TODO sækja allar sass skrár
-@import "products";
-@import "cart";
-@import "staff";
-@import "index";
-@import "header-footer";
+@import "scss/products";
+@import "scss/cart";
+@import "scss/staff";
+@import "scss/index";
+@import "scss/header-footer";
