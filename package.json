@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/sot14/Hopverkefni-1#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
